@@ -1,0 +1,23 @@
+---
+prometheus:
+  host: "prometheus-pushgateway.domain.com"
+  job:
+    zendesk-ticket-count:
+      interval: 60
+
+zendesk-ticket-count:
+  base_url: "https://domain.zendesk.com"
+  search_api: "/api/v2/search/count.json"
+  zendesk_api_user: "user@domain.com"
+  zendesk_api_token: "gy39t6KYMgHZdVkqG6tn8QvVitczoKuBjDF6TRbX"
+  filter:
+      status:
+        - open
+        - hold
+        - solved
+        - pending
+        - closed
+        - new
+      tag:
+        - some_tag
+        - someother_tag
