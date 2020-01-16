@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Config
+app/config/config.yml
+
+# VirtualEnv
+venv
+
+# PyCharm
+.idea
